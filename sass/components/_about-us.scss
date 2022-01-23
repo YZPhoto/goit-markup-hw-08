@@ -1,4 +1,9 @@
 .section--no-padding {
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   padding-top: 0;
   padding-bottom: 94px;
 }
@@ -30,6 +35,7 @@
   margin-bottom: 0;
   width: 100%;
   height: 70px;
+  
   background: rgba(47, 48, 58, 0.8);
   color: $main-color;
 }

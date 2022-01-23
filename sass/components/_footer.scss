@@ -5,15 +5,42 @@
   background-color: $primary-bg-color;
 }
 
-.container--main {
-  align-items: baseline;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-thumb {
+    display: flex;
+    justify-content: center;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-thumb {
+    display: flex;
+    align-items: baseline;
+  }
+
+ .container--main {
+  display: flex;
+    align-items: baseline;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
 .info-thumb {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding-right: 12px;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    width: 231px;
+    text-align: start;
+  }
 }
 
 .info-thumb__adress {
@@ -33,7 +60,16 @@
 }
 
 .info-thumb__contacts{
-  margin-top: 9px;
+  margin-top: 8px;
+  color: $footer-contacts-color;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-top: 9px;
+  }
 }
 
 .info-thumb__mail, .info-thumb__tel{
@@ -52,13 +88,21 @@
 }
 
 .subscription-thumb {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: flex-start;
-  margin-left: 60px;
-}
+  margin-bottom: 60px;
+  text-align: center;
 
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-left: 70px;
+    text-align: start;
+  }
+}
 .page-footer__section__subtitle {
   margin-bottom: 20px;
 

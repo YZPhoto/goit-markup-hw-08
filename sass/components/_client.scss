@@ -10,6 +10,14 @@
   flex-basis: calc(100% / 6 - #{$margin-set});
   margin-top: $margin-set;
   margin-left: $margin-set;
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - #{$margin-set});
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 6 - #{$margin-set});
+  }
 }
 
 .clients__link {
@@ -27,6 +35,14 @@
   &:hover,
   &:focus {
     border: 1px solid $brand-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 

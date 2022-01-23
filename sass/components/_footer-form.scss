@@ -1,26 +1,59 @@
 .footer-form {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-left: 93px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    text-align: start;
+  }
 }
 
 .footer-form__field {
-  display: inline-flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
 }
 
 .footer-form__input {
-  margin: 0;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding: 15px 16px;
-  width: 358px;
+  width: 100%;
 
+  color: $main-color;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  color: $main-color;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-right: 12px;
+    width: 351px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-thumb {
+    display: inline-flex;
+    width: 200px;
+    margin-right: 0;
+  }
+  .footer-form__button-primary {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .footer-form__icon {

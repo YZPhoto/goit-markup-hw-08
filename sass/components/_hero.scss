@@ -5,30 +5,103 @@
 .page-hero__overlay {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
+  padding-top: 118px;
   max-width: 1600px;
-  min-height: 600px;
+  min-height: 400px;
 
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../photo/overlay.jpg");
+    url("../images/mobile/hero.jpg");
   background-color: $primary-bg-color;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    min-height: 600px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .page-hero__overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mobile/hero@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .page-hero__overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/tablet/hero.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .page-hero__overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/tablet/hero@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .page-hero__overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop/hero.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .page-hero__overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/desktop/hero@2x.jpg");
+    }
+  }
 }
 
 .page-hero__title {
-  margin-bottom: $margin-set;
+   margin-bottom: $margin-set;
 
   color: $main-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
