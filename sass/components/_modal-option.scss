@@ -1,0 +1,47 @@
+.modal-form__check-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.modal-form__check-off {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-form__check-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid $primary-text-color;
+  border-radius: 2px;
+
+  .modal-form__check-off:checked + & {
+    background-image: url(../photo/check.svg); 
+    background-color: $brand-color;
+    background-size: cover;
+    border-color: transparent;
+    background-origin: border-box;
+  }
+}
+
+.modal-form__policy {
+  color: $secondary-text-color;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.modal-form__link {
+  color: $brand-color;
+}

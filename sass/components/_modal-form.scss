@@ -1,0 +1,73 @@
+.modal-form__field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form__field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-form__input,
+.modal-form__comment {
+  margin: 0;
+  padding: 11px 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+}
+
+.modal-form__input {
+  padding-left: 42px;
+
+  .modal-form__field:focus-within &,
+  .modal-form__field:hover & {
+    border-color: $brand-color;
+    outline: none;
+  }
+}
+
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  display: inline-block;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form__field:focus-within &,
+  .modal-form__field:hover & {
+    fill: $brand-color;
+  }
+}
+
+.modal-form__comment {
+  padding: 12px 16px;
+  resize: none;
+  height: 120px;
+
+  .modal-form__field:focus-within &,
+  .modal-form__field:hover & {
+    border-color: $brand-color;
+    outline: none;
+  }
+}
+
+.modal-form__label {
+  margin-bottom: 4px;
+
+  color: $secondary-text-color;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}

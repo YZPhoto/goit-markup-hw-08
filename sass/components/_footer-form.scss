@@ -1,0 +1,29 @@
+.footer-form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 93px;
+}
+
+.footer-form__field {
+  display: inline-flex;
+}
+
+.footer-form__input {
+  margin: 0;
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 358px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  color: $main-color;
+}
+
+.footer-form__icon {
+  fill: $main-color;
+  vertical-align: middle;
+}

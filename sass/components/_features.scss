@@ -1,0 +1,30 @@
+.features {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * #{$margin-set});
+  margin-left: calc(-1 * #{$margin-set});
+}
+
+.features__item {
+  flex-basis: calc(100% / 4 - #{$margin-set});
+  margin-top: $margin-set;
+  margin-left: $margin-set;
+}
+
+.features__thumb {
+  display: flex;
+  margin-bottom: $margin-set;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+
+  background-color: $secondary-bg-color;
+  border-radius: 4px;
+}
+
+.features__text {
+  color: $secondary-text-color;
+  font-weight: 400;
+  line-height: 1.71;
+}

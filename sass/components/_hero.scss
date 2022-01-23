@@ -1,0 +1,34 @@
+.page-hero {
+  text-align: center;
+}
+
+.page-hero__overlay {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  max-width: 1600px;
+  min-height: 600px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../photo/overlay.jpg");
+  background-color: $primary-bg-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-hero__title {
+  margin-bottom: $margin-set;
+
+  color: $main-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
