@@ -7,7 +7,7 @@
 }
 
 .clients__item {
-  flex-basis: calc(100% / 6 - #{$margin-set});
+   width: calc(100% / 2 - #{$margin-set});
   margin-top: $margin-set;
   margin-left: $margin-set;
 
