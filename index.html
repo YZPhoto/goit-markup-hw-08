@@ -432,67 +432,71 @@
     <!-- Футер -->
     <footer class="page-footer">
         <div class="container container--main">
-            <div class="info-thumb">
-                <a href="/" class="logo page-footer__logo">
-                    <span class="logo__label logo__label--inverse">Web</span>Studio
-                </a>
-                <address class="info-thumb__adress">
-                    г. Киев, пр-т Леси Украинки, 26 </address>
-                <ul class="info-thumb__list">
-                    <li class="info-thumb__contacts"><a href="mailto:info@example.com"
-                            class="info-thumb__mail">info@example.com</a></li>
-                    <li class="info-thumb__contacts"><a href="tel:+38-099-111-11-11" class="info-thumb__tel">+38 099 111
-                            11 11</a></li>
-                </ul>
+            <div class="footer-thumb">
+                <div class="info-thumb">
+                    <a href="/" class="logo page-footer__logo">
+                        <span class="logo__label logo__label--inverse">Web</span>Studio
+                    </a>
+                    <address class="info-thumb__adress">
+                        г. Киев, пр-т Леси Украинки, 26 </address>
+                    <ul class="info-thumb__list">
+                        <li class="info-thumb__contacts"><a href="mailto:info@example.com"
+                                class="info-thumb__mail">info@example.com</a>
+                        </li>
+                        <li class="info-thumb__contacts"><a href="tel:+38-099-111-11-11" class="info-thumb__tel">+38 099
+                                111
+                                11 11</a></li>
+                    </ul>
+                </div>
+                <div class="subscription-thumb">
+                    <h3 class="section__subtitle page-footer__section__subtitle">Присоединяйтесь</h3>
+                    <ul class="social-links social-links--center list">
+                        <li class="social-links__item">
+                            <a href="" class="social-links__link social-links__link--theme-dark">
+                                <svg class="social-links__icon social-links__icon--theme-dark" width="20" height="20">
+                                    <use href="./photo/symbol-defs.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="" class="social-links__link social-links__link--theme-dark">
+                                <svg class="social-links__icon social-links__icon--theme-dark" width="20" height="20">
+                                    <use href="./photo/symbol-defs.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="" class="social-links__link social-links__link--theme-dark">
+                                <svg class="social-links__icon social-links__icon--theme-dark" width="20" height="20">
+                                    <use href="./photo/symbol-defs.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="" class="social-links__link social-links__link--theme-dark">
+                                <svg class="social-links__icon social-links__icon--theme-dark" width="20" height="20">
+                                    <use href="./photo/symbol-defs.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="subscription-thumb">
-                <h3 class="section__subtitle page-footer__section__subtitle">Присоединяйтесь</h3>
-                <ul class="social-links social-links--center list">
-                    <li class="social-links__item">
-                        <a href="" class="social-links__link social-links__link--theme-dark">
-                            <svg class="social-links__icon social-links__icon--theme-dark" width="20" height="20">
-                                <use href="./photo/symbol-defs.svg#icon-instagram-2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="" class="social-links__link social-links__link--theme-dark">
-                            <svg class="social-links__icon social-links__icon--theme-dark" width="20" height="20">
-                                <use href="./photo/symbol-defs.svg#icon-twitter-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="" class="social-links__link social-links__link--theme-dark">
-                            <svg class="social-links__icon social-links__icon--theme-dark" width="20" height="20">
-                                <use href="./photo/symbol-defs.svg#icon-facebook-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="" class="social-links__link social-links__link--theme-dark">
-                            <svg class="social-links__icon social-links__icon--theme-dark" width="20" height="20">
-                                <use href="./photo/symbol-defs.svg#icon-linkedin-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <form action="" class="footer-form">
-            <h3 class="section__subtitle page-footer__section__subtitle">Подпишитесь на рассылку</h3>
-            <label class="footer-form__field">
-                <input class="footer-form__input" type="email" name="email" placeholder="E-mail">
-                <span class="footer-form__label"></span>
-            </label>
-            <div class="form-thumb">
-                <button class="button-primary footer-form__button-primary" type="submit">Подписаться
-                    <svg class="footer-form__icon" width="24" height="24">
-                        <use href="./photo/symbol-defs2.svg#icon-icon-send"></use>
-                    </svg>
-                </button>
-            </div>
-        </form>
+            <form class="footer-form">
+                <h3 class="section__subtitle page-footer__section__subtitle">Подпишитесь на рассылку</h3>
+                <label class="footer-form__field">
+                    <input class="footer-form__input" type="email" name="email" placeholder="E-mail">
+                    <span class="footer-form__label"></span>
+                </label>
+
+                <div class="form-thumb">
+                    <button class="button-primary footer-form__button-primary" type="submit">Подписаться
+                        <svg class="footer-form__icon" width="24" height="24">
+                            <use href="./photo/symbol-defs2.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
 
@@ -557,6 +561,7 @@
             </form>
         </div>
     </div>
+    </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous">
@@ -564,7 +569,6 @@
     <script defer src="./js/mobile-menu.js"></script>
     <!--<script src="./js/menu.js"></script>-->
     <script src="./js/modal.js"></script>
-
 </body>
 
 </html>

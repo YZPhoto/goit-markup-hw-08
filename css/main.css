@@ -1027,11 +1027,15 @@ img {
   line-height: 1.71;
 }
 
-.info-thumb__list {
+.info-thumb__mail, .info-thumb__tel {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.71;
+  text-decoration: none;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info-thumb__mail:hover, .info-thumb__mail:focus, .info-thumb__tel:hover, .info-thumb__tel:focus {
+  color: #2196f3;
 }
 
 .info-thumb__contacts {
@@ -1047,20 +1051,6 @@ img {
     margin: 0;
     margin-top: 9px;
   }
-}
-
-.info-thumb__mail, .info-thumb__tel {
-  color: #afb1b8;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.71;
-  text-decoration: none;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.info-thumb__mail:hover, .info-thumb__mail:focus, .info-thumb__tel:hover, .info-thumb__tel:focus {
-  color: #2196f3;
 }
 
 .subscription-thumb {
